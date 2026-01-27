@@ -1,0 +1,28 @@
+[project]
+name = "agro_tools"
+version = "0.0.1"
+authors = [
+  { name="Fernando Caçador", email="fernando.cacador@proton.me" },
+]
+description = "Package with tools used by agronomic sciences"
+
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GNU General Public License"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/nandocp"
+Issues = "https://github.com/nandocp/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+spec_test_format = "{result} {name}"
+spec_header_format = "{module_path}:"
+pythonpath = "src"
